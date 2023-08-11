@@ -18,7 +18,12 @@
 (2,'Serbia'),
 (3,'France'),
 (4,'Lithuania'),
-(5,'USA');"
+(5,'USA')
+(6,'Greece'),
+(7,'Turkey'),
+(8,'Spain'),
+(9,'Italy'),
+(10,'USA');"
 
 "CREATE TABLE `player` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
