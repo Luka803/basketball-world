@@ -59,17 +59,17 @@
         <form action="/api/teams/{{team.id}}/update" method="post" class="form w-50" name="team">
             <h3>Update a team</h3>
             <label for="name">Name</label>
-            <input type="text" name="name" placeholder="Insert name" id="name" class="form-control" value="{{team.name}}">
+            <input type="text" name="name" placeholder="Insert name" id="name" class="form-control" value="{{team.name}}" required>
             <label for="description">Achievements</label>
             <textarea class="form-control" placeholder="Insert achievements" name="achievements" id="achievements">{{team.achievements}}</textarea>
             <label for="id_country">Country</label>
-            <select name="id_country" class="form-control" id="id_country">
+            <select name="id_country" class="form-control" id="id_country" required>
                 {{#countries}}
                 <option value="{{id}}">{{name}}</option>
                 {{/countries}}
             </select>
             <label for="year">Founded</label>
-            <input type="number" name="founded" class="form-control" id="founded" value="{{team.founded}}">
+            <input type="number" name="founded" class="form-control" id="founded" value="{{team.founded}}"required>
             <input type="submit" value="Update a team" class="btn btn-primary mt-4">
         </form>
     </main>

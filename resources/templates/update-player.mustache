@@ -59,10 +59,10 @@
         <form action="/api/players/{{player.id}}/update" method="post" class="form w-50" name="player">
             <h3>Update a player</h3>
             <label for="name">Name</label>
-            <input type="text" name="name" placeholder="Insert name" id="name" class="form-control"
+            <input type="text" name="name" placeholder="Insert name" id="name" class="form-control required"
                 value="{{player.name}}" required>
             <label for="id_country">Country</label>
-            <select name="id_country" class="form-control" id="id_country">
+            <select name="id_country" class="form-control" id="id_country" required>
                 {{#countries}}
                 <option value="{{id}}">{{name}}</option>
                 {{/countries}}
