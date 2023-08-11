@@ -43,6 +43,7 @@ footer {
     width: 350px;
     border-radius: 15px;
     overflow: hidden;
+    transition: all 10s ease-in-out;
 }
 
 .link-button {
@@ -51,7 +52,7 @@ footer {
     display: flex;
     justify-content: center;
     border-radius: 20px;
-    transition: all 1 ease-in-out;
+ 
     overflow: hidden;
 }
 
@@ -59,6 +60,7 @@ footer {
 .nav-links a {
     text-decoration: none;
     color: black;
+    transition: all 10s ease-in-out;
 }
 
 .nav-links a:is(:hover, :focus) {
@@ -89,4 +91,9 @@ img {
 
 .icon-edit {
     text-align: center;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
 }

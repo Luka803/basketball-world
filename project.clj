@@ -15,5 +15,5 @@
   :plugins [[lein-ring "0.12.6"]]
   :ring {:handler basketball-world.core/-main
          :init basketball-world.core/init
-         :port 10000}
+         :port 8080}
   :repl-options {:init-ns basketball-world.core})
