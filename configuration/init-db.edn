@@ -1,0 +1,6 @@
+{:database-name "basketball"
+ :user-name "root"
+ :password ""
+ :adapter "mysql"
+ :server-name "localhost"
+ :init-file-name "init.sql"}

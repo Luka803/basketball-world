@@ -1,0 +1,5 @@
+{:user "root"
+ :password ""
+ :subprotocol "mysql"
+ :subname "//localhost:3306/basketball"
+ :zeroDateTimeBehaviour "convertToNull"}
