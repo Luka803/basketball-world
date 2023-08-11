@@ -59,13 +59,13 @@
         <form action="/api/roles/create" method="post" class="form w-50" name="role">
             <h3>Create a role</h3>
             <label for="id_player">Player</label>
-            <select name="id_player" class="form-control" id="id_player">
+            <select name="id_player" class="form-control" id="id_player" required>
                 {{#players}}
                 <option value="{{id}}">{{name}}</option>
                 {{/players}}
             </select>
             <label for="id_team">Team</label>
-            <select name="id_team" class="form-control" id="id_team">
+            <select name="id_team" class="form-control" id="id_team" required>
                 {{#teams}}
                 <option value="{{id}}">{{name}}</option>
                 {{/teams}}
