@@ -56,46 +56,46 @@
         </div>
     </nav>
     <main>
-        <div class="card-header d-flex justify-content-between align-items-center">
-            <div>Players</div>
-            <a type="button" class="btn btn-primary" href="/players/create">Add player</a>
+        <div class="card">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <div>Players</div>
+                <a type="button" class="btn btn-primary" href="/players/create">Add player</a>
+            </div>
+            <div class="card-body">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Country</th>
+                            <th>Birthday</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#players}}
+                        <tr>
+                            <td>{{name}}</td>
+                            <td>{{country}}</td>
+                            <td>{{birthday}}</td>
+                            <td>
+                                <a type="button" class="table-button btn-edit" href="/players/{{id}}/update">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </a>
+                            </td>
+                            <td>
+                                <a type="button" class="table-button btn-delete" href="/api/players/{{id}}/delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        {{/players}}
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <div class="card-body">
-            <table class="table table-striped table-bordered">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Country</th>
-                        <th>Birthday</th>
-                        <th>Edit</th>
-                        <th>Delete</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {{#players}}
-                    <tr>
-                        <td>{{name}}</td>
-                        <td>{{country}}</td>
-                        <td>{{birthday}}</td>
-                        <td>
-                            <a type="button" class="table-button btn-edit" href="/players/{{id}}/update">
-                                <i class="fa-solid fa-pencil"></i>
-                            </a>
-                        </td>
-                        <td>
-                            <a type="button" class="table-button btn-delete" href="/api/players/{{id}}/delete">
-                                <i class="fa-solid fa-trash"></i>
-                            </a>
-                        </td>
-                    </tr>
-                    {{/players}}
-                </tbody>
-            </table>
-        </div>
-    </main>
-    <footer>
-    </footer>
 
+    </main>
 </body>
 
 </html>
