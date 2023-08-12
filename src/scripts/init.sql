@@ -18,7 +18,7 @@
 (2,'Serbia'),
 (3,'France'),
 (4,'Lithuania'),
-(5,'USA')
+(5,'USA'),
 (6,'Greece'),
 (7,'Turkey'),
 (8,'Spain'),
@@ -51,7 +51,7 @@
   `id_player` int(11) NOT NULL,
   `id_team` int(11) NOT NULL,
   `position` varchar(2) NOT NULL,
-  PRIMARY KEY (`id_player`,`id_team`),
+  PRIMARY KEY (`id_player`),
   KEY `fk_role_team_idx` (`id_team`),
   CONSTRAINT `fk_role_player` FOREIGN KEY (`id_player`) REFERENCES `player` (`id`),
   CONSTRAINT `fk_role_team` FOREIGN KEY (`id_team`) REFERENCES `team` (`id`)
