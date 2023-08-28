@@ -39,9 +39,11 @@ lein ring server
 
 [5] https://github.com/Zookey/Book.git 
 
-[6] 
+[6] https://www.youtube.com/watch?v=ljiXrvRsQiw
 
+[7] https://www.youtube.com/watch?v=mguNnJP5drw
 
+Couldnt find right template project except Book by Zookey from git where is only backend side of the application. There i saw how to init sql script, how to type queries in clojure and define routes for the app. For the frontend of the app, i used youtube tutorials how to use Mustache library
 
 ## License
 
